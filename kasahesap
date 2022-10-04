@@ -1,0 +1,41 @@
+import javax.xml.xpath.XPathEvaluationResult;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double armut=2.14,elma =3.67, domates =1.11,muz =0.95, patlican =5.00;
+        double armutgirdi,elmagirdi,domatesgirdi,muzgirdi,patlicangirdi,total;
+
+
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("ne kadar armut aldınız?");
+        armutgirdi=girdi.nextDouble();
+        System.out.println("ne kadar elma aldınız?");
+        elmagirdi=girdi.nextDouble();
+        System.out.println("ne kadar domates aldınız?");
+        domatesgirdi=girdi.nextDouble();
+        System.out.println("ne kadar muz aldınız?");
+        muzgirdi=girdi.nextDouble();
+        System.out.println("ne kadar patlican aldınız?");
+        patlicangirdi=girdi.nextDouble();
+
+        System.out.println("ürünleriniz toplanıyor lütfen bekleyiniz...");
+        System.out.println("-------------------------------------------");
+        armut=armutgirdi*armut;
+        elma=elmagirdi*elma;
+        domates=domatesgirdi*domates;
+        muz=muzgirdi*muz;
+        patlican=patlicangirdi*patlican;
+       total=armut+elma+domates+muz+patlican;
+       System.out.println("toplam hesap:"+total);
+
+
+
+
+    }
+    }
+
+
+
+
